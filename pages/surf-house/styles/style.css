@@ -1,0 +1,593 @@
+@font-face {
+  font-family: "Raleway Black";
+  src: url("../packages/fonts/Raleway_Black.ttf");
+}
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../packages/fonts/Raleway_Bold.ttf");
+}
+@font-face {
+  font-family: "Raleway ExtraBold";
+  src: url("../packages/fonts/Raleway_ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Raleway ExtraBold";
+  src: url("../packages/fonts/Raleway_ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../packages/fonts/Raleway_Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway Heavy";
+  src: url("../packages/fonts/Raleway_Heavy.otf");
+}
+@font-face {
+  font-family: "Raleway Black Italic";
+  src: url("../packages/fonts/Raleway_Black_Italic.ttf");
+}
+@font-face {
+  font-family: "Roboto Black";
+  src: url("../packages/fonts/Roboto_Black.ttf");
+}
+@font-face {
+  font-family: "Roboto Black Italic";
+  src: url("../packages/fonts/Roboto_Black_Italic.ttf");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../packages/fonts/Roboto_Regular.ttf");
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0 auto;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbeef2+0,8fc9d4+100 */
+  background: #dbeef2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #dbeef2 0%, #8fc9d4 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #dbeef2 0%, #8fc9d4 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #dbeef2 0%, #8fc9d4 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbeef2', endColorstr='#8fc9d4', GradientType=0);
+  /* IE6-9 */
+}
+.header {
+  height: 700px;
+  background: url("../images/indexBack.jpg") center center;
+  background-size: cover;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .header {
+    height: 835px;
+  }
+}
+.header .container {
+  position: relative;
+}
+.header .logo {
+  display: block;
+  background: url("../images/surfhouse_logo.png") no-repeat center top;
+  width: 121px;
+  height: 111px;
+  position: absolute;
+  top: 23px;
+  left: 69px;
+  padding-top: 89px;
+  font-family: "Raleway Black", Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+.header .logo:hover {
+  color: black;
+  text-decoration: none;
+}
+.header .welcomeWrap {
+  background: #fff51f;
+  max-width: 272px;
+  height: 300px;
+  position: absolute;
+  top: 281px;
+  box-sizing: border-box;
+  padding: 82px 46px 0 25px;
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .header .welcomeWrap {
+    top: 250px;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .header .welcomeWrap {
+    top: 111px;
+    left: 15px;
+  }
+}
+.header .welcomeWrap .welcome {
+  font-family: "Raleway Bold", Verdana, sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  max-width: 201px;
+  height: 52px;
+  font-size: 30px;
+  line-height: 30px;
+}
+@media (min-width: 0) and (max-width: 320px) {
+  .header .welcomeWrap .welcome {
+    height: 73px;
+  }
+}
+.header .welcomeWrap .welcomeText {
+  max-width: 219px;
+  height: 60px;
+  font-family: "Raleway Bold", Verdana, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 14px;
+  color: #333333;
+  margin-top: 24px;
+}
+.header .navbar-default .navbar-toggle:focus,
+.header .navbar-default .navbar-toggle:hover {
+  background-color: #fff;
+}
+.header .xsNavBar {
+  border: none;
+  margin: 0 -15px;
+  z-index: 1;
+}
+.header .socialsLinksWrap {
+  position: absolute;
+  right: 64px;
+  top: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .header .socialsLinksWrap {
+    top: 50px;
+    left: 45px;
+    min-width: 80%;
+    padding: 15px;
+  }
+}
+.header .socialsLinksWrap a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+.header .socialsLinksWrap a i {
+  font-size: 15px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .header .socialsLinksWrap a i {
+    font-size: 30px;
+  }
+}
+.header .funRideWrap {
+  position: absolute;
+  top: 243px;
+  right: 50px;
+  max-width: 313px;
+  height: 169px;
+  color: #fff51f;
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .header .funRideWrap {
+    top: 250px;
+    right: 50px;
+  }
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .header .funRideWrap {
+    top: 430px;
+    left: 15px;
+  }
+}
+.header .funRideWrap .funRideHead {
+  font-family: "Raleway ExtraBold", Verdana, sans-serif;
+  font-size: 48px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.header .funRideWrap .funRideDesc {
+  font-family: "Raleway Regular", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.header .funRideWrap a {
+  display: block;
+  width: 124px;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  background: #fff51f;
+  font-family: "Raleway Heavy", Verdana, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 62px;
+}
+.header .navbar-brand.xsLogo {
+  font-size: 20px;
+  font-family: "Raleway Black", Verdana, sans-serif;
+  text-transform: uppercase;
+  color: black;
+  background: url("../images/surfhouse_logo.png") no-repeat 15px center;
+  background-size: 15%;
+  padding-left: 55px;
+}
+.header .navbar-brand.xsLogo:hover {
+  color: #000;
+}
+.content {
+  margin-top: -20px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .content {
+    margin-top: 0;
+  }
+}
+.content .mainMenu {
+  background-color: #26d2fc;
+}
+.content .mainMenu a {
+  display: block;
+  height: 43px;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto Black", Verdana, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  padding-left: 40px;
+}
+.content .mainMenu a:hover {
+  background: #333333;
+  color: #ffffff;
+}
+.content .mainMenu a:first-child {
+  height: 66px;
+  line-height: 66px;
+  background: #333333;
+  color: #ffffff;
+}
+.content .nowIsOpenWrap {
+  height: 300px;
+  border: 10px solid white;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .content .nowIsOpenWrap {
+    margin-top: 15px;
+  }
+}
+.content .nowIsOpenWrap .nowIsOpen {
+  background: url("../images/store.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.content .nowIsOpenWrap .nowIsOpen span {
+  font-family: "Raleway Black Italic", Verdana, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 129px;
+  right: 15px;
+}
+.content .contentHead {
+  font-family: "Roboto Black Italic", Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #707070;
+  font-size: 22px;
+  height: 78px;
+  line-height: 78px;
+  background: #f8f8f8;
+  padding: 0 25px;
+  margin-bottom: 30px;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .content .contentHead {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 583px) and (max-width: 767px) {
+  .content .productUnitCol {
+    float: left;
+    width: 50%;
+  }
+}
+.content .productUnitCol .productUnit {
+  background: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 30px;
+}
+.content .productUnitCol .productUnit img {
+  width: 100%;
+  margin-bottom: 19px;
+}
+.content .productUnitCol .productUnit .newCorner {
+  background: url("../images/new-corner.png") no-repeat;
+}
+.content .productUnitCol .productUnit .hotCorner {
+  background: url("../images/hot-corner.png") no-repeat;
+}
+.content .productUnitCol .productUnit .newCorner,
+.content .productUnitCol .productUnit .hotCorner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-family: "Roboto Regular", Verdana, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 0 0 15px;
+}
+.content .productUnitCol .productUnit .nameAndPriceWrap {
+  font-family: "Roboto Black Italic", Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 45px;
+}
+.content .productUnitCol .productUnit .nameAndPriceWrap .productName {
+  font-size: 14px;
+  line-height: 18px;
+  /*protection against bugs*/
+  max-height: 2.8em;
+  overflow: hidden;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+.content .productUnitCol .productUnit .nameAndPriceWrap .productPriceWrap {
+  text-align: right;
+}
+.content .productUnitCol .productUnit .nameAndPriceWrap .productPriceWrap .currentPrice {
+  font-size: 18px;
+  line-height: 18px;
+}
+.content .productUnitCol .productUnit .nameAndPriceWrap .productPriceWrap .oldPrice {
+  font-size: 14px;
+  color: #e24602;
+  text-decoration: line-through;
+}
+.content .brandsWrap {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 15px;
+  box-sizing: border-box;
+}
+.content .brandsWrap img {
+  margin: 5px;
+}
+.content .instagramFeedWrap {
+  background-color: #eaeaea;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+.content .instagramFeedWrap .instagramFeedHead {
+  font-family: "Roboto Black Italic", Verdana, sans-serif;
+  width: 100%;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+}
+.content .instagramFeedWrap .instagramFeedHead span {
+  font-size: 22px;
+}
+.content .instagramFeedWrap .instagramImgsWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 29px;
+}
+.content .instagramFeedWrap .instagramImgsWrap .myFoto {
+  width: 186px;
+  height: 187px;
+}
+.content .instagramFeedWrap .instagramImgsWrap img {
+  padding: 8px;
+  background: #fff;
+  margin: 2px;
+}
+.content .socialBtnsWrap {
+  display: flex;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .content .socialBtnsWrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.content .socialBtnsWrap a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(33.33333333%);
+  height: inherit;
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+  padding: 50px 0;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .content .socialBtnsWrap a {
+    width: auto;
+  }
+}
+.content .socialBtnsWrap a:nth-child(1) {
+  background-color: #3b5997;
+}
+.content .socialBtnsWrap a:nth-child(2) {
+  background-color: #3fccfd;
+}
+.content .socialBtnsWrap a:nth-child(3) {
+  background-color: #cb2027;
+}
+.content .socialBtnsWrap a i:hover {
+  transform: scale(1.2, 1.2);
+}
+.footer {
+  background-color: #373737;
+  color: #fff;
+  min-height: 340px;
+  text-align: justify;
+}
+.footer > .container:before,
+.footer > .container:after {
+  display: none;
+}
+.footer .footerInside {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 75px;
+  box-sizing: border-box;
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .footer .footerInside .footerColumn {
+    margin-left: -10px;
+  }
+  .footer .footerInside .footerColumn:nth-child(4) {
+    margin-right: -10px;
+  }
+  .footer .footerInside .footerColumn:nth-child(5) {
+    margin: 0 -10px;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .footer .footerInside .footerColumn {
+    flex-grow: 1;
+    padding: 10px;
+  }
+}
+.footer .footerInside .columnHead {
+  font-family: "Raleway ExtraBold", Verdana, sans-serif;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+.footer .footerInside .columnLinks {
+  font-family: "Roboto Regular", Verdana, sans-serif;
+}
+.footer .footerInside .columnLinks a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: inherit;
+  /*Наследует от класса .footer*/
+  display: block;
+  margin-bottom: 4px;
+}
+.footer .footerInside .newsLetter {
+  width: 270px;
+  font-size: 12px;
+}
+.footer .footerInside .newsLetter input {
+  width: 180px;
+  height: 30px;
+  background-color: #fff51f;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  box-sizing: border-box;
+  float: left;
+  color: #000;
+}
+.footer .footerInside .newsLetter .newsLetterMessageForm {
+  margin: 20px 0 45px 0;
+}
+.footer .footerInside .newsLetter .newsLetterMessageForm button {
+  background: #000000;
+  color: #fff;
+  width: 71px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.footer .footerInside .newsLetter .newsLetterMessageForm button:hover {
+  background: #fff;
+  color: #000;
+}
+.footer .footerInside .newsLetter .newsLetterMessageForm button:focus {
+  background: #9ACD32;
+  color: #fff;
+}
+.footer .footerInside .newsLetter .newsLetterMessageForm .cardsSpriteWrap {
+  margin-top: 45px;
+}
+.footer .footerInside .newsLetter .newsLetterMessageForm .cardsSpriteWrap img {
+  float: left;
+  margin-right: 5px;
+}
+.footer .footerInside .aboutUs {
+  width: 232px;
+  text-align: justify;
+  font-size: 12px;
+}
+.footer .footerInside .aboutUs .aboutUsPhone,
+.footer .footerInside .aboutUs .aboutUsEmail {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.footer .footerInside .aboutUs .aboutUsEmail span {
+  color: #faef03;
+  margin-left: 11px;
+}
+.copyRightsAndSocialLinksWrap {
+  background: #333333;
+}
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside {
+  min-height: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside:before,
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside:after {
+  display: none;
+}
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside .copyRights {
+  font-family: "Roboto Regular", Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 50px;
+  color: #dad9d9;
+  float: left;
+}
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside .copyRights span {
+  text-transform: uppercase;
+}
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside .footerSocialLinks {
+  width: 178px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyRightsAndSocialLinksWrap .copyRightsAndSocialLinksInside .footerSocialLinks a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+}
