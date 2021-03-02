@@ -1,0 +1,17 @@
+.b-carouselWraper {
+  padding: 30px;
+  background: #f2f2f2;
+
+  @include media-breakpoint-down(xs) {
+    padding: 10px;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding: 20px;
+  }
+
+  &__slider {
+    padding: 10px;
+    background: #fff;
+  }
+}

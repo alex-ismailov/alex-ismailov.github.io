@@ -1,0 +1,30 @@
+.b-loginNav {
+  font-family: "Georgia Regular", sans-serif;
+  color: #81b300;
+
+  &__item {
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: #81b300;
+
+    &:hover {
+      color: #0f0f0f;
+    }
+  }
+
+  &__divider {
+    display: inline-block;
+  }
+
+  &_rightBottom {
+    position: absolute;
+    right: 30px;
+    bottom: 37px;
+
+    @include media-breakpoint-down(sm) {
+      left: 20px;
+      bottom: 30px;
+    }
+  }
+}

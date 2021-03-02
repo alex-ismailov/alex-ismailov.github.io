@@ -1,0 +1,39 @@
+.b-socialLinks {
+  background: #81b300;
+  width: 251px;
+  height: 49px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  &__iconLink {
+    text-decoration: none;
+    color: #fff;
+    background: #1f1f1f;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+
+    &:hover {
+      background: #00acee;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  &_rightTop {
+    position: absolute;
+    right: 30px;
+
+    @include media-breakpoint-down(sm) {
+      left: 20px;
+    }
+  }
+}

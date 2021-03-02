@@ -1,0 +1,51 @@
+.b-properties {
+  //background: #fff;
+
+  &__untisWrap {
+    //display: flex;
+    //justify-content: space-between;
+    padding: 30px 5px;
+    max-width: 100%;
+  }
+
+  &__unit {
+    text-align: center;
+    padding: 15px;
+  }
+
+  &__usersIcon {
+    /*font-size: 64px;*/
+    font-size: 6rem;
+    color: #c45f4b;
+  }
+
+  &__globeIcon {
+    font-size: 6rem;
+    color: #cf9d41;
+  }
+
+  &__cogsIcon {
+    font-size: 6rem;
+    color: #3d5f12;
+  }
+
+  &__leafIcon {
+    font-size: 6rem;
+    color: #7da3b7;
+  }
+
+  &__header {
+    font-size: 18px;
+    font-weight: normal;
+    color: #81b300;
+    margin: 0;
+    padding: 20px;
+  }
+
+  &__descript {
+    text-align: center;
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.5;
+  }
+}

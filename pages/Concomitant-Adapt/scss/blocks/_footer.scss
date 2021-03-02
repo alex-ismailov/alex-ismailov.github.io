@@ -1,0 +1,95 @@
+.b-footer {
+  background: #3b3b3b;
+  font-family: "Georgia Regular", sans-serif;
+  color: #999999;
+  line-height: 1.6;
+  font-size: 16px;
+  //display: flex;
+  //justify-content: space-between;
+  padding: 30px;
+
+  &__unit {
+    padding: 0 15px;
+    //width: 25%;
+  }
+
+  &__unitTitle {
+    text-transform: uppercase;
+    color: #666;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 16px 0;
+    margin: 0;
+  }
+
+  &__unitContactsDescript {
+    padding-bottom: 30px;
+  }
+
+  &__quickLink {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    border-bottom: 1px solid #666;
+    padding: 10px 0;
+
+    &:hover {
+      color: #81b300;
+      transition-duration: .5s;
+      text-decoration: underline;
+    }
+  }
+
+  &__readMore {
+    text-decoration: none;
+    color: #81b300;
+    /*float: right;*/
+    padding-top: 10px;
+
+    &_floatRight {
+      float: right;
+    }
+  }
+
+  &__form {
+    color: #999;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__input,
+  &__submit {
+    display: block;
+    font-family: "Georgia Regular", sans-serif;
+    background: #1f1f1f;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #81b300;
+  }
+
+  &__input_marginBottom,
+  &__submit_marginBottom {
+    margin-bottom: 10px;
+  }
+
+  &__input:focus {
+    color: #81b300;
+    box-shadow: 0 0 0 2px #81b300;
+    transition-duration: .5s;
+  }
+
+  &__submit {
+    color: #81b300;
+
+    &:hover {
+      color: #fff;
+      transition-duration: .5s;
+    }
+  }
+}

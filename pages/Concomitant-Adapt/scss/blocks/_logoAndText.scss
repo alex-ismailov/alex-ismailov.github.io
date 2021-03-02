@@ -1,0 +1,27 @@
+.b-logoAndText {
+  font-family: "Georgia Regular", sans-serif;
+  color: #333333;
+
+  &__logo {
+    font-size: 36px;
+    font-variant: small-caps;
+  }
+
+  &__textLogo {
+    font-size: 12px;
+    color: #999999;
+    //padding-top: 15px;
+  }
+
+  &_left {
+    position: absolute;
+    top: 36px;
+    left: 29px;
+
+    @include media-breakpoint-down(sm) {
+      top: 60px;
+      left: 20px;
+    }
+  }
+}
+

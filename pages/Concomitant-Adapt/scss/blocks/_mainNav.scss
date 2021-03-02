@@ -1,0 +1,80 @@
+.b-mainNav {
+  //height: 70px;
+  background: #81b300;
+  font-family: "Georgia Regular", sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+
+  &__itemsWrap {
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 29px;
+    color: #fff;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 20px;
+
+    &:hover {
+      color: #0f0f0f;
+    }
+  }
+
+  &__search {
+    height: 30px;
+    margin: auto 0;
+    font-size: 12px;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 15px;
+    }
+
+    @include media-breakpoint-only(md) {
+      margin-left: 41px;
+    }
+  }
+
+  &__inputSearch {
+    height: inherit;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    /*float: left;*/
+    color: #7f7f7f;
+    font-family: "Georgia Regular", sans-serif;
+    transition-duration: 1s;
+
+    &:focus {
+      background: #F2FFD0;
+    }
+
+    &_leftFloat {
+      float: left;
+    }
+  }
+
+  &__buttonSearch {
+    height: inherit;
+    outline: none;
+    border: none;
+    border-left: 1px solid #dddddd;
+    color: #81b300;
+    padding: 0 6px;
+    background: #fff;
+    font-size: 12px;
+    font-family: "Georgia Regular", sans-serif;
+  }
+}

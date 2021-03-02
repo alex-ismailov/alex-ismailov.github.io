@@ -1,0 +1,26 @@
+@import "../packages/bootstrap-4.1.2/scss/bootstrap";
+@import "variables.scss";
+
+@import "blocks/myBody";
+@import "blocks/topLine";
+@import "blocks/header";
+@import "blocks/logoAndText";
+@import "blocks/socialLinks";
+@import "blocks/loginNav";
+@import "blocks/mainNav";
+@import "blocks/viewerFotos";
+@import "blocks/carouselWraper";
+@import "blocks/properties";
+@import "blocks/sectionDividerWrap";
+@import "blocks/projects";
+@import "blocks/footer";
+@import "blocks/copyRights";
+
+.container {
+  background: #fff;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
