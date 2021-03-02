@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Arial Regular";
+  src: url("../packages/fonts/Arial_Regular.ttf");
+}
+@font-face {
+  font-family: Socialico;
+  src: url("../packages/fonts/Socialico.ttf");
+}
+
+@xxsFrom: 0;
+@xxsTo: 479px;
+@xsFrom: 480px;
+@xsTo: 767px;
+@smFrom: 768px;
+@smTo: 991px;
+@mdFrom: 992px;
+@mdTo: 1199px;
+@lgFrom: 1200px;
+
+.scrnSizeAndStyleMixin(@_device, @_content) {
+  & when (@_device = phones) {
+    @media all and (max-width: 479px) { @_content(); }
+  }
+  & when (@_device = wide-phones) {
+    @media all and (min-width: 480px) and (max-width: 767px) { @_content(); }
+  }
+  & when (@_device = tablets) {
+    @media all and (min-width: 768px) and (max-width: 991px) { @_content(); }
+  }
+  & when (@_device = small-desktops) {
+    @media all and (min-width: 992px) and (max-width: 1199px) { @_content(); }
+  }
+  & when (@_device = lg-desktops) {
+    @media all and (min-width: 1200px) and (max-width: 1440px) { @_content(); }
+  }
+  & when (@_device = xlg-desktops) {
+    @media all and (min-width: 1441px) and (max-width: 1920px) { @_content(); }
+  }
+}
+
+.CustomScrnSizeAndStyleMixin(@_minWidth, @_maxWidth, @_styles) {
+    @media (min-width: @_minWidth) and (max-width: @_maxWidth) {
+        @_styles();
+    }
+}

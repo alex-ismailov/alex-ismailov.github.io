@@ -1,0 +1,470 @@
+@font-face {
+  font-family: "Arial Regular";
+  src: url("../packages/fonts/Arial_Regular.ttf");
+}
+@font-face {
+  font-family: Socialico;
+  src: url("../packages/fonts/Socialico.ttf");
+}
+html,
+body {
+  min-height: 100%;
+}
+html h2,
+body h2 {
+  font-size: 30px;
+  color: #445161;
+}
+body {
+  background: #ccc;
+  font-family: Arial, Verdana, sans-serif;
+  margin: 0;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+}
+.container .headerMain {
+  background: #445161;
+  color: #fff;
+  padding: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container .headerMain {
+    padding: 15px;
+  }
+}
+.container .headerMain:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container .headerMain h1 {
+  font-size: 60px;
+  margin: 0 0 10px 0;
+}
+@media all and (max-width: 479px) {
+  .container .headerMain h1 {
+    font-size: 46px;
+  }
+}
+.container .headerMain img {
+  width: 100%;
+}
+.container .headerMain ul {
+  font-size: 20px;
+  line-height: 1.8;
+  list-style: inside url("../images/check_icon.png");
+  padding-left: 0;
+}
+.container .aboutProduct {
+  padding: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container .aboutProduct {
+    padding: 15px;
+  }
+}
+.container .aboutProduct:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container .aboutProduct .aboutProdHeader {
+  float: left;
+  margin: 0 0 30px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container .aboutProduct .aboutProdHeader {
+    margin-bottom: 15px;
+  }
+}
+.container .aboutProduct .aboutProdImg {
+  float: right;
+  width: 100%;
+}
+.container .aboutProduct .aboutProdDesc {
+  float: left;
+  max-width: 710px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #445161;
+  margin-bottom: 15px;
+}
+.container .aboutProduct .aboutProdDesc:last-child {
+  margin-bottom: 0;
+}
+.container .dignityProduct {
+  background: #f5f5f5;
+  padding: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container .dignityProduct {
+    padding: 15px;
+  }
+}
+.container .dignityProduct:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container .dignityProduct .dignityProductHeader {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.container .dignityProduct .pluses {
+  color: #445161;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.container .dignityProduct .pluses:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+@media (min-width: 992px) and (max-width: 2400px) {
+  .container .dignityProduct .pluses div[class^="col-md"]:not( :nth-child(-n+2)) {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .container .dignityProduct .pluses div[class^="col-md"]:not( :nth-child(1)) {
+    margin-top: 15px;
+  }
+}
+@media all and (max-width: 479px) {
+  .container .dignityProduct .pluses div[class^="col-md"]:last-child .plus {
+    background: none;
+    padding-bottom: 0;
+  }
+}
+.container .dignityProduct .pluses .plus {
+  background: url("../images/plus_icon.gif") no-repeat left 5px;
+  padding-left: 40px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+@media (min-width: 0) and (max-width: 479px) {
+  .container .dignityProduct .pluses .plus {
+    background-position: center bottom;
+    padding: 0 0 40px 0;
+  }
+}
+.container .screenshots {
+  padding: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container .screenshots {
+    padding: 15px;
+  }
+}
+.container .screenshots:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container .screenshots .screenshotsHeader {
+  margin: 0 0 30px;
+  text-align: center;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .container .screenshots [class^="col"]:not(:first-child) {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 2400px) {
+  .container .screenshots [class^="col"]:nth-child(n+3) {
+    margin-top: 15px;
+  }
+}
+.container .screenshots .screenshotUnit {
+  color: #445161;
+}
+.container .screenshots .screenshotUnit:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.container .screenshots .screenshotUnit h3 {
+  line-height: 30px;
+}
+@media (min-width: 0) and (max-width: 479px) {
+  .container .screenshots .screenshotUnit h3 {
+    margin: 5px 0;
+  }
+}
+.container .screenshots .screenshotImg {
+  float: left;
+  margin-right: 15px;
+}
+@media (min-width: 0) and (max-width: 479px) {
+  .container .screenshots .screenshotImg {
+    float: none;
+  }
+}
+.container .screenshots .screenshotUnitHeader {
+  margin: 0;
+}
+.container .screenshots .screenshotDescript {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+.container .reviews {
+  background: #f5f5f5;
+  padding: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container .reviews {
+    padding: 15px;
+  }
+}
+.container .reviews:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container .reviews .reviewsHeader {
+  margin: 0 0 30px;
+  text-align: center;
+}
+@media (min-width: 992px) and (max-width: 2400px) {
+  .container .reviews .reviewUnitWrap:nth-child(n+3) {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .container .reviews .reviewUnitWrap:nth-child(n+2) {
+    margin-top: 15px;
+  }
+}
+.container .reviews .reviewUnitWrap .reviewUnit:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.container .reviews .reviewUnitWrap .reviewImg {
+  float: right;
+  border-radius: 50px;
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .container .reviews .reviewUnitWrap .reviewImg {
+    display: block;
+    margin: 0 auto 15px auto;
+    float: none;
+  }
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .container .reviews .reviewUnitWrap .revieWrap {
+    margin-top: 30px;
+  }
+}
+.container .reviews .reviewUnitWrap blockquote {
+  border: none;
+  background: #ebebeb;
+  float: right;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  position: relative;
+}
+.container .reviews .reviewUnitWrap blockquote span {
+  color: #989898;
+}
+.container .reviews .reviewUnitWrap blockquote::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  background: #ebebeb;
+  transform: rotate(45deg);
+}
+@media (min-width: 0) and (max-width: 1199px) {
+  .container .reviews .reviewUnitWrap blockquote::before {
+    left: calc(100% / 2 - 10px);
+    top: -9px;
+  }
+}
+.container .buyItNow {
+  padding: 50px;
+}
+.container .buyItNow:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .container .buyItNow {
+    padding: 15px;
+  }
+}
+.container .buyItNow .buyItNowHeader {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.container .buyItNow .buyItNowUnitsWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .container .buyItNow .buyItNowUnitsWrap {
+    display: block;
+  }
+}
+.container .buyItNow .buyItNowUnit {
+  background: #445161;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #445161;
+  max-width: 298px;
+  margin-right: 15px;
+  max-width: 100%;
+}
+@media (min-width: 0) and (max-width: 991px) {
+  .container .buyItNow .buyItNowUnit {
+    margin-right: 0;
+  }
+  .container .buyItNow .buyItNowUnit:nth-child(n+2) {
+    margin-top: 30px;
+  }
+}
+.container .buyItNow .buyItNowUnit .buyItNowUnitTariff {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 17px;
+}
+.container .buyItNow .buyItNowUnit .buyItNowUnitPrice {
+  background: #fff;
+  color: #445161;
+  font-size: 40px;
+  line-height: 30px;
+  padding: 18px;
+  text-align: center;
+}
+.container .buyItNow .buyItNowUnit .buyItNowUnitDescript {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.container .buyItNow .buyItNowUnit .buyBtn {
+  display: block;
+  border-radius: 5px;
+  background: #fff;
+  color: #445161;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 14px;
+}
+footer {
+  background: #445161;
+  padding: 50px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  footer {
+    padding: 15px;
+  }
+}
+footer:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+footer .footerHeader {
+  color: #fff;
+  margin: 0 0 30px;
+  text-align: center;
+}
+footer .contactsWrap:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+footer .contactsWrap input[type="text"],
+footer .contactsWrap textarea {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 7px 5px;
+  margin-bottom: 21px;
+  color: #445161;
+  font-size: 16px;
+  line-height: 24px;
+}
+footer .contactsWrap textarea {
+  min-height: 170px;
+}
+footer .contactsWrap input[type="submit"] {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #445161;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+footer .contactsWrap .contactsList {
+  margin-top: 15px;
+}
+footer .contactsWrap .contactsList .skype {
+  background: url("../images/skype_icon.png") no-repeat left center;
+}
+footer .contactsWrap .contactsList .icq {
+  background: url("../images/icq_icon.png") no-repeat left center;
+}
+footer .contactsWrap .contactsList .mail {
+  background: url("../images/email_icon.png") no-repeat left center;
+}
+footer .contactsWrap .contactsList .phone {
+  background: url("../images/phone_icon.png") no-repeat left center;
+}
+footer .contactsWrap .contactsList .skype,
+footer .contactsWrap .contactsList .icq,
+footer .contactsWrap .contactsList .mail,
+footer .contactsWrap .contactsList .phone {
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+footer .contactsWrap .contactsList .socialIconsWrap {
+  font-family: Socialico, sans-serif;
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 44px;
+}
+.copyRights {
+  background: #f5f5f5;
+  color: #445161;
+  text-align: center;
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+}
