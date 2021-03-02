@@ -1,0 +1,1056 @@
+@import "_variables";
+
+body {
+  padding: 0 20px;
+}
+
+header {
+
+  .container {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .headerInside {
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .logoAndContactsWrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+
+      .screenSize(small-desktops, {
+        grid-template-columns: repeat(3, 1fr);
+
+        .logo {
+          grid-column-start: 1;
+          grid-column-end: -1;
+        }
+      });
+
+      .screenSize(tablets, {
+        grid-template-columns: repeat(2, 1fr);
+
+        .logo,
+        .workTime {
+          grid-column-start: 1;
+          grid-column-end: -1;
+        }
+      });
+
+      .customScreenSize(@xxsFrom, @xsTo, {
+        grid-template-columns: 1fr;
+      });
+
+      a {
+        display: block;
+      }
+
+      .workTime {
+        background: url("../images/workTime.png") no-repeat;
+      }
+
+      .mailUs {
+        background: url("../images/mailUs.png") no-repeat;
+      }
+
+      .callUs {
+        background: url("../images/callUs.png") no-repeat;
+      }
+
+      .contactUnitWrap {
+        padding-left: 60px;
+        height: 51px;
+        font-family: "Open Sans Regular", sans-serif;
+        font-size: 15px;
+        color: #6a6a6a;
+        padding-top: 5px;
+        box-sizing: border-box;
+
+        span {
+          font-family: "Open Sans Bold", Verdana, sans-serif;
+        }
+      }
+    }
+
+    .divider {
+      background-color: rgba(194, 194, 194, 0.31);
+      height: 2px;
+      margin-top: 20px;
+    }
+
+    .menuAndSocialLinks {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .customScreenSize(@xxsFrom, 701px, {
+        flex-direction: column;
+      });
+
+      a {
+        display: inline-block;
+        height: 90px;
+        line-height: 90px;
+
+        .customScreenSize(702px, 877px, {
+          height: 40px;
+          line-height: 40px;
+        });
+      }
+
+      .mainMenu {
+        display: block;
+        margin-right: 20px;
+
+        a {
+          text-decoration: none;
+          padding: 0 20px;
+          font-family: "Montserrat Regular", Verdana, sans-serif;
+          font-size: 20px;
+          color: #6c6c6c;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+
+          &:hover {
+            color: #262626;
+          }
+
+          .customScreenSize(@xxsFrom, 701px, {
+            display: block;
+            padding-left: 0;
+            height: 40px;
+            line-height: 40px;
+          });
+        }
+      }
+
+      .socialLinksWrap {
+
+        a {
+          text-decoration: none;
+          margin: 0 5px;
+          font-size: 23px;
+          color: #000;
+
+          &:first-child {
+            margin: 0 5px 0 0;
+          }
+
+          &:last-child {
+            margin: 0 0 0 5px;
+          }
+
+          .customScreenSize(@xxsFrom, 701px, {
+            padding-left: 0;
+            height: 40px;
+            line-height: 40px;
+          });
+        }
+      }
+    }
+  }
+}
+
+.mediCare {
+  background: url("../images/medicarePlan.jpg") no-repeat center center;
+  width: ~"calc(100% + 40px)";
+  background-size: cover;
+  height: 640px;
+  margin: 0 -20px;
+  text-align: center;
+  color: #474747;
+
+  .mediCareInside {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .mediCareHeader {
+      font-family: "Montserrat Medium", Verdana, sans-serif;
+      font-size: 47.7px;
+      line-height: 58px;
+      text-align: center;
+      min-height: 114px;
+
+    }
+
+    .mediCareText {
+      margin-top: 37px;
+      margin-bottom: 42px;
+      font-family: "Open Sans Regular", sans-serif;
+      font-size: 17px;
+    }
+
+    a {
+      display: block;
+      width: 166px;
+      height: 47px;
+      line-height: 47px;
+      margin: 0 auto;
+      text-decoration: none;
+      font-size: 18.25px;
+      font-family: "Montserrat Regular", Verdana, sans-serif;
+      background: #1a9bdc;
+      color: #fff;
+      text-transform: uppercase;
+      box-shadow: 4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+      border-radius: 30px;
+
+      &:hover {
+        background-color: #37c3a8;
+        cursor: pointer;
+        transform: scale(1.1);
+
+        @keyframes turnAroundButton {
+
+        }
+      }
+    }
+  }
+}
+
+.benefits {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b1d2+0,37c3a8+100 */
+  background: rgb(67,177,210); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(67,177,210,1) 0%, rgba(55,195,168,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(67,177,210,1) 0%,rgba(55,195,168,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(67,177,210,1) 0%,rgba(55,195,168,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43b1d2', endColorstr='#37c3a8',GradientType=1 ); /* IE6-9 */
+
+  color: #fff;
+  width: ~"calc(100% + 40px)";
+  margin-left: -20px;
+  margin-right: -20px;
+
+  .container {
+    &:before {
+      display: none;
+    }
+  }
+
+  .benefitsInside {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    margin: 0 auto;
+
+    .customScreenSize(@smFrom, @mdTo, {
+      grid-template-columns: repeat(2, minmax(150px, 1fr));
+    });
+
+    .customScreenSize(@xxsFrom, @smTo, {
+      grid-template-columns: minmax(150px, 1fr);
+    });
+
+    .benefitUnit {
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .benefitIcon {
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+      }
+
+      .bestTreatment {
+        background: url("../images/bestTreatment.png") no-repeat ;
+      }
+
+      .emergencyHelp {
+        background: url("../images/emergencyHelp.png") no-repeat;
+      }
+
+      .medicalStaff {
+        background: url("../images/medicalStuff.png") no-repeat;
+      }
+
+      .qualifiedDoctors {
+        background: url("../images/qualifiedDoctors.png") no-repeat;
+      }
+
+      .benefitHeader {
+        font-family: "Montserrat Bold", Verdana, sans-serif;
+        font-size: 30px;
+        margin: 30px 0;
+        line-height: 36px;
+      }
+
+      .benefitDescript {
+        font-size: 14px;
+        font-family: "Open Sans Regular", sans-serif;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.whyChooseUs {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .whyChooseUsInside {
+    color: #6a6a6a;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .customScreenSize(@xxsFrom, @smTo, {
+      padding-bottom: 25px;
+    });
+
+    .whyChooseUsHeader {
+      margin: 111px 0 31px 0;
+      text-align: center;
+      font-family: "Montserrat Bold", Verdana, sans-serif;
+      font-size: 45px;
+      color: #474747;
+    }
+
+    .whyChooseUsDescript {
+      margin-bottom: 25px;
+      font-family: "Open Sans Regular", Verdana, sans-serif;
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .choose_1 {
+      background: url("../images/choose1.png") no-repeat;
+    }
+
+    .choose_2 {
+      background: url("../images/choose2.png") no-repeat;
+    }
+
+    .choose_3 {
+      background: url("../images/choose3.png") no-repeat;
+    }
+
+    .choose_4 {
+      background: url("../images/choose4.png") no-repeat;
+    }
+
+    .customScreenSize(@xxsFrom, @xxsTo, {
+      .choose_1, .choose_2, .choose_3, .choose_4 {
+        background-position: center;
+      }
+    });
+
+    .whyChooseUsUnitsWrap {
+      display: grid;
+      grid-template-columns: 1fr 337px 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 20px;
+
+      .screenSize(tablets, {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 598px 1fr 1fr;
+      });
+
+      .customScreenSize(@xxsFrom, @xsTo, {
+        grid-template-columns: 1fr;
+      });
+
+      .whyChooseUsDoctor {
+        background: url(../images/chooseUsDoctor.png) no-repeat center bottom;
+        height: 598px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-self: end;
+
+        .screenSize(tablets, {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 2;
+        });
+
+        .customScreenSize(@xxsFrom, @xsTo, {
+          grid-column-start: 1;
+          grid-column-end: 2;
+        });
+
+        .customScreenSize(@xxsFrom, @xxsTo, {
+          margin: 0 -20px;
+        });
+      }
+
+      .whyChooseUsUnit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .customScreenSize(@xxsFrom, @xsTo, {
+          align-items: center;
+        });
+
+        .whyChooseUsUnitHeader {
+          padding-left: 95px;
+          font-family: "Montserrat Bold", Verdana, sans-serif;
+          font-size: 30px;
+          height: 75px;
+          line-height: 75px;
+
+          .customScreenSize(@xxsFrom, @xxsTo, {
+            padding-left: 0;
+            padding-top: 75px;
+          });
+        }
+
+        .whyChooseUsUnitDescript {
+          margin-top: 20px;
+          font-family: "Open Sans Regular", Verdana, sans-serif;
+          font-size: 16px;
+          text-align: justify;
+
+          .customScreenSize(@xsFrom, @xsTo, {
+            padding-left: 0;
+            margin-top: 15px;
+          });
+
+          .customScreenSize(@xxsFrom, @xxsTo, {
+            padding-left: 0;
+            margin-top: 75px;
+          });
+        }
+      }
+    }
+  }
+}
+
+.dignities {
+  background: url("../images/achievements.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 792px;
+  margin: 0 -20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Montserrat Medium", Verdana, sans-serif;
+  color: #fff;
+
+  .container {
+    padding: 0;
+    .customScreenSize(@xxsFrom, @smTo, {
+      width:100%;
+    });
+  }
+
+  .dignitiesUnitsWrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    min-height: inherit;
+    padding-bottom: 25px;
+
+    .customScreenSize(@xsFrom, @smTo, {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2fr;
+    });
+
+    .customScreenSize(@xxsFrom, @xxsTo, {
+      grid-template-columns: 1fr;
+      grid-template-rows: 4fr;
+    });
+
+    &:before {
+      display: none;
+    }
+
+    .dignityUnit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .dignityIcon {
+        width: 120px;
+        height: 120px;
+      }
+      .dignityUnitNumber {
+        font-size: 60px;
+        margin: 27px 0;
+      }
+
+      .dignityDivider {
+        width: 84px;
+        height: 6px;
+        background-color: #ffffff;
+        margin-bottom: 27px;
+      }
+
+      .dignityUnitText {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .happyCustomers {
+        background: url("../images/happyCustomers.png") no-repeat center center;
+      }
+      .topHospitality {
+        background: url("../images/topHospitality.png") no-repeat center center;
+      }
+      .innovateApproach {
+        background: url("../images/innovateApproach.png") no-repeat center center;
+      }
+      .lungReplacement {
+        background: url("../images/lungReplacement.png") no-repeat center center;
+      }
+    }
+  }
+}
+
+.worksAndCreativeInside {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+          "howWeWorks howWeWorks ourCreative"
+          "howWeWorksDescript howWeWorksDescript ourCreativeDescript"
+          "worksUnit1 worksUnit2 heartTreatment"
+          "worksUnitTextWrap1 worksUnitTextWrap2 heartTreatmentPoints"
+          "readMoreWrap readMoreWrap ."
+  ;
+  grid-gap: 20px;
+
+  .customScreenSize(@xsFrom, @smTo, {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+            "howWeWorks ourCreative"
+            "howWeWorksDescript ourCreativeDescript"
+            "worksUnit1 worksUnit2"
+            "worksUnitTextWrap1 worksUnitTextWrap2"
+            "heartTreatment heartTreatmentPoints"
+            "readMoreWrap readMoreWrap"
+  ;
+  });
+
+  .customScreenSize(@xxsFrom, @xsTo, {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "howWeWorks"
+            "howWeWorksDescript"
+            "ourCreative"
+            "ourCreativeDescript"
+            "worksUnit1"
+            "worksUnitTextWrap1"
+            "worksUnit2"
+            "worksUnitTextWrap2"
+            "heartTreatment"
+            "heartTreatmentPoints"
+            "readMoreWrap"
+  ;
+  });
+
+  .howWeWorks {
+    grid-area: howWeWorks;
+  }
+
+  .ourCreative {
+    grid-area: ourCreative;
+  }
+
+  .howWeWorksDescript {
+    grid-area: howWeWorksDescript;
+  }
+
+  .ourCreativeDescript {
+    grid-area: ourCreativeDescript;
+  }
+
+  .worksUnit1,
+  .worksUnit2 {
+    max-width: 334px;
+    height: 210px;
+  }
+
+  .worksUnit1 {
+    grid-area: worksUnit1;
+    background: url("../images/works1.jpg") no-repeat center center;
+    background-size: 100%;
+  }
+
+  .worksUnit2 {
+    grid-area: worksUnit2;
+    background: url("../images/works2.jpg") no-repeat center center;
+    background-size: 100%
+  }
+
+  h2 {
+    color: #474747;
+    font-family: "Montserrat Bold", Verdana, sans-serif;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-family: "Montserrat Medium", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+    span {
+      font-family: "Montserrat Medium", Verdana, sans-serif;
+      color: #0087be;
+      font-size: 15px;
+    }
+  }
+
+  p {
+    font-family: "Open Sans Regular", Verdana, sans-serif;
+    color: #6a6a6a;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .heartTreatment {
+    grid-area: heartTreatment;
+
+    .heartTreatmentHeader {
+      font-family: "Montserrat Medium", Verdana, sans-serif;
+      color: #fff;
+      border-radius: 30px;
+      font-size: 20px;
+      height: 54px;
+      line-height: 54px;
+      padding-left: 60px;
+      background: url("../images/heartPoint.png") no-repeat 10px center;
+      background-color: #0087be;
+    }
+  }
+
+  .worksUnitTextWrap1 {
+    grid-area: worksUnitTextWrap1;
+  }
+
+  .worksUnitTextWrap2 {
+    grid-area: worksUnitTextWrap2;
+  }
+
+  .heartTreatmentPoint {
+    grid-area: heartTreatmentPoints;
+    font-family: "Montserrat Medium", Verdana, sans-serif;
+    color: #474747;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 54px;
+    line-height: 54px;
+    padding-left: 60px;
+    background: url("../images/heartPoint.png") no-repeat 10px center;
+    background-color: #e2e2e2;
+    margin-bottom: 12px;
+
+  }
+
+  .readMoreWrap {
+    grid-area: readMoreWrap;
+    text-align: center;
+
+     button {
+       background-color: #1a9bdc;
+       color: #fff;
+       border-radius: 30px;
+       width: 166px;
+       height: 47px;
+       line-height: 17px;
+       font-family: "Montserrat Regular", Verdana, sans-serif;
+       font-size: 17px;
+       text-transform: uppercase;
+       outline: none;
+       border: none;
+       box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+
+       &:hover {
+         background-color: #37c3a8;
+         cursor: pointer;
+         transform: scale(1.1);
+       }
+     }
+  }
+}
+
+.gallery {
+  background: url(../images/galleryBack.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 90px 0;
+  margin: 100px -20px 0 -20px;
+
+  .galleryInside {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+      font-family: "Montserrat Bold", Verdana, sans-serif;
+      color: #fff;
+      font-size: 45px;
+      text-align: center;
+      margin: 0 0 38px 0;
+      padding: 0 20px;
+    }
+
+    p {
+      font-family: "Open Sans Regular", Verdana, sans-serif;
+      color: #fff;
+      font-size: 16px;
+      line-height: 32px;
+      margin: 0 0 54px 0;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .galleryPhotosWrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      grid-row-gap: 37px;
+      grid-column-gap: 34px;
+      justify-items: center;
+
+      .customScreenSize(@smFrom, @mdTo, {
+        grid-template-columns: repeat(2, 1fr);
+      });
+
+      .customScreenSize(@xxsFrom, @xsTo, {
+        grid-template-columns: 1fr;
+      });
+
+      .customScreenSize(0, 373px, {
+        grid-template-columns: 1fr;
+
+        img {
+          max-width: 280px;
+        }
+      });
+    }
+  }
+}
+
+.ourTeam {
+
+  .ourTeamInside {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+    h2 {
+      font-family: "Montserrat Bold", Verdana, sans-serif;
+      color: #474747;;
+      font-size: 45px;
+      text-align: center;
+      margin: 0 0 38px 0;
+      padding: 0 20px;
+    }
+
+    p {
+      font-family: "Open Sans Regular", Verdana, sans-serif;
+      color: #6f6f6e;
+      font-size: 16px;
+      line-height: 32px;
+      margin: 0 0 54px 0;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .specialistsWrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+
+      .customScreenSize(@smFrom, @mdTo, {
+        grid-template-columns: repeat(2, 1fr);
+      });
+
+      .customScreenSize(@xxsFrom, @xsTo, {
+        grid-template-columns: 1fr;
+      });
+
+      .customScreenSize(0, 373px, {
+        grid-template-columns: 1fr;
+
+        img {
+          max-width: 230px;
+        }
+      });
+
+      .specialistUnit {
+        text-align: center;
+        font-family: "Montserrat Medium", Verdana, sans-serif;
+        color: #6f6f6e;
+
+        img {
+          margin-bottom: 35px;
+        }
+
+        .specialistName {
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+
+        .specialistPost {
+          font-size: 18px;
+          margin-bottom: 26px;
+        }
+
+        .specialistSocialLinks {
+          font-size: 25px;
+          color: #0087be;
+          text-align: center;
+
+          a {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.specialOffer {
+  background-color: #e2e2e2;
+  margin: 0 -20px;
+  padding: 68px 0;
+
+  .specialOfferInside {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    .specialOfferText {
+      font-family: "Montserrat Bold", sans-serif;
+      color: #6c6c6c;
+      font-size: 30px;
+      margin-right: 20px;
+      text-align: center;
+
+      .customScreenSize(0, 1071px, {
+        margin-bottom: 20px;
+      });
+
+      .customScreenSize(0, 1051px, {
+        margin-right: 0;
+      });
+    }
+
+    button {
+      background-color: #1a9bdc;
+      color: #fff;
+      border-radius: 30px;
+      width: 166px;
+      height: 47px;
+      line-height: 17px;
+      font-family: "Montserrat Regular", Verdana, sans-serif;
+      font-size: 17px;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+      box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+
+      &:hover {
+        background-color: #37c3a8;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #171717;
+  margin: 0 -20px;
+
+  .footerInside {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    color: #6c6c6c;
+    font-family: "Open Sans Regular", Verdana, sans-serif;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "getInTouch quickLinks ourServices enquiryForm";
+
+    .customScreenSize(@smFrom, @mdTo, {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "getInTouch quickLinks"
+                          "ourServices enquiryForm";
+      grid-row-gap: 20px;
+
+      h3 {
+        text-align: center;
+      }
+    });
+
+    .customScreenSize(@xxsFrom, @xsTo, {
+      grid-template-columns: 1fr;
+      grid-template-areas: "getInTouch"
+                          "quickLinks"
+                          "ourServices"
+                          "enquiryForm";
+      grid-row-gap: 20px;
+
+      h3 {
+        text-align: center;
+      }
+
+      .quickLinks,
+      .ourServices{
+        width: 250px;
+      }
+    });
+
+    h3 {
+      font-family: "Open Sans Bold", Verdana, sans-serif;
+      color: #fff;
+      font-size: 22px;
+      margin-bottom: 65px;
+    }
+
+    .getInTouch,
+    .quickLinks,
+    .ourServices,
+    .enquiryForm {
+      justify-self: center;
+    }
+
+    .getInTouch {
+      grid-area: getInTouch;
+
+      .getInTouchMail,
+      .getInTouchPhone,
+      .getInTouchAddress {
+        padding-left: 80px;
+        margin-bottom: 50px;
+      }
+
+      .getInTouchMail {
+        background: url("../images/inTouchMail.png") no-repeat left center;
+      }
+
+      .getInTouchPhone {
+        background: url("../images/inTouchPhone.png") no-repeat 7px center;
+      }
+
+      .getInTouchAddress {
+        background: url("../images/inTouchLocation.png") no-repeat 3px center;
+
+      }
+    }
+
+    .quickLinks {
+      grid-area: quickLinks;
+      //justify-self: center;
+    }
+
+    .ourServices {
+      grid-area: ourServices;
+      justify-self: center;
+    }
+
+    .enquiryForm {
+      grid-area: enquiryForm;
+      max-width: 231px;
+      //justify-self: center;
+      //font-size: 14px;
+
+      form {
+        font-size: 13px;
+
+        textarea {
+          height: 100px;
+        }
+
+        input, textarea {
+          background: none;
+          width: 231px;
+          border: none;
+          border-bottom: 1px solid rgba(194, 194, 194, 0.42);
+          outline: none;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+          border: none;
+
+          background-color: #1a9bdc;
+          color: #fff;
+          border-radius: 30px;
+          width: 166px;
+          height: 47px;
+          line-height: 17px;
+          font-family: "Montserrat Regular", Verdana, sans-serif;
+          font-size: 17px;
+          text-transform: uppercase;
+          outline: none;
+          border: none;
+          box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+
+          &:hover {
+            background-color: #37c3a8;
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #6c6c6c;
+    margin-bottom: 27px;
+    padding-left: 40px;
+    background: url("../images/arrow.png") no-repeat left center;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.copyRights {
+  background-color: #1a1a1a;
+  margin: 0 -20px;
+  padding: 50px;
+  font-family: "Open Sans Regular", Verdana, sans-serif;
+  color: #615555;
+  font-size: 13px;
+  text-align: center;
+}
+
+.hiddenBlock {
+  opacity: 0;
+}
+
+.visibleBlock {
+  opacity: 1;
+}
+
